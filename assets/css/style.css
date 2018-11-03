@@ -1,0 +1,41 @@
+.nav.navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.block-header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.block-header-title {
+    font-size: 72px;
+    color: #444;
+}
+.navigation .nav li a:hover {
+    color: #777;
+}
+.navigation .nav li a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #a8a8a8;
+    position: relative;
+    display: block;
+
+}
+.navigation .nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    border-bottom: 2px solid #a8a8a8;
+    left: 0;
+    right: 0;
+}
